@@ -2,7 +2,7 @@ from tkinter import *
 root = Tk()
 root.geometry("400x400")
 root.title("Ascii")
-rootconfigure(background = 'snow')
+root.configure(background = 'snow')
 
 enter_word = Entry(root)
 enter_word.place(relx = 0.5, rely = 0.4, anchor = CENTER)
@@ -18,6 +18,6 @@ def asciiConverter():
 btn = Button(root, text = "Show name in Ascii", command=asciiConverter, bg="gold",fg="black")
 btn.place(relx=0.5,rely=0.5,anchor=CENTER)
 
-label.place(relx = 0.5, rely = 0.5, anchor = CENTER)
+label.place(relx = 0.5, rely = 0.6, anchor = CENTER)
 
 root.mainloop()
